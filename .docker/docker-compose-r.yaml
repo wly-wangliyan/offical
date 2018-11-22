@@ -1,12 +1,12 @@
 version: '2'
 services:
-    car-wash-admin:
+    official-website:
         build:
             context: ..
             dockerfile: .docker/Dockerfile
             args:
                 version: R
-        image: car-wash-admin
+        image: official-website
         restart: always
         ports:
-            - 8300:80
+            - 8400:80

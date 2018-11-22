@@ -5,5 +5,4 @@
 
 export const environment = {
   production: false,
-  WASH_SERVER_DOMAIN: '//car-wash-server-d.parkone.cn',
 };
