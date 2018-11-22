@@ -1,0 +1,12 @@
+version: '2'
+services:
+    car-wash-admin:
+        build:
+            context: ..
+            dockerfile: .docker/Dockerfile
+            args:
+                version: D
+        image: car-wash-admin
+        restart: always
+        ports:
+            - 8300:80
