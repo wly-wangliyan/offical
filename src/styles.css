@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+.ant-anchor-wrapper {
+    background: transparent;
+    width: 80%;
+    float: left;
+}
+.ant-anchor-ink {
+    display: none;
+}
+.ant-anchor{
+    display: flex;
+    height: 60px;
+}
+.ant-anchor-link {
+    height: none;
+}
+.ant-anchor-link {
+    padding: 0;
+    width: 25%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.ant-anchor-link-title {
+    color: #fff;
+    font-size: 16px;
+}
+.ant-anchor-link-active>.ant-anchor-link-title {
+    color: #fff;
+} 
+.ant-anchor-link-title:hover{
+    color: #fff;
+}
+.ant-btn-primary {
+    color: rgba(0,0,0,.65);
+    background: #fff;
+    border: none;
+}
+.ant-btn-primary:hover {
+    color: rgba(0,0,0,.65);
+    background: #fff;
+    border: none;
+}
