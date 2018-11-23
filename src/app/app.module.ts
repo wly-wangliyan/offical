@@ -15,6 +15,7 @@ import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { FooterComponent } from './footer/footer.component';
+import { FootComponent } from './foot/foot.component';
 
 registerLocaleData(zh);
 @NgModule({
@@ -25,7 +26,8 @@ registerLocaleData(zh);
     ForgotpwdComponent,
     HomeComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    FootComponent
   ],
   imports: [
     BrowserModule,

@@ -1,25 +1,25 @@
 <body>
   
-
-  <div class="nav">
-    <div class="nav-logo">
-      <img src="../../assets/img/logo.png" alt="">
-    </div>
-    <div class="nav-menu">
-        <nz-anchor  [nzAffix]="false">
-          <nz-link nzHref="#body" nzTitle="首页"></nz-link>
-          <nz-link nzHref="#overseas" nzTitle="关于海外"></nz-link>
-          <nz-link nzHref="#message" nzTitle="行业资讯"></nz-link>
-          <nz-link nzHref="#contact" nzTitle="联系我们"></nz-link>
-        </nz-anchor>
-        <div class="login-register">
-          <a [routerLink]="['/login']" target="_blank">登录</a>
-          <span>|</span>
-          <a [routerLink]="['/register']" target="_blank">注册</a> 
-        </div>
-    </div>
-  
-  </div>
+  <div class="nav-top">
+    <div class="nav">
+      <div class="nav-logo">
+        <img src="../../assets/img/logo.png" alt="">
+      </div>
+      <div class="nav-menu" #navbar>
+          <nz-anchor  [nzAffix]="false">
+            <nz-link nzHref="#body" nzTitle="首页"></nz-link>
+            <nz-link nzHref="#overseas" nzTitle="关于海外"></nz-link>
+            <nz-link nzHref="#message" nzTitle="行业资讯"></nz-link>
+            <nz-link nzHref="#contact" nzTitle="联系我们"></nz-link>
+          </nz-anchor>
+          <div class="login-register">
+            <a [routerLink]="['/login']" target="_blank">登录</a>
+            <span>|</span>
+            <a [routerLink]="['/register']" target="_blank">注册</a> 
+          </div>
+      </div>
     
+    </div>
+  </div>    
   <app-home></app-home>
 </body>  
