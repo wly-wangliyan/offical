@@ -51,7 +51,7 @@ body {
 .password{
     background: url(../../assets/img/psd-unfocus.png) no-repeat 15px center;
 }
-.form-group button {
+.form-group span {
     width: 95px;
     background: #FFF;
     cursor: pointer;
@@ -63,6 +63,10 @@ body {
     border-bottom: 1px solid #ccc;
     border-top-right-radius:5px;
     border-bottom-right-radius:5px;
+    display: inline-block;
+    float: right;
+    line-height: 48px;
+    text-align: center;
 }
 .pwd {
     width: 71% !important;

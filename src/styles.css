@@ -42,3 +42,6 @@
     background: #fff;
     border: none;
 }
+.ant-modal-footer .ant-btn-primary {
+    background: #1890ff;
+}
