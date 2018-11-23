@@ -133,6 +133,7 @@
     background-image: linear-gradient(151deg,#7f9efb 0%,#8ea8fb 50%,#9ab0fb 100%),linear-gradient(#f3f3f3,#f3f3f3);
 }
 .contact-component {
+    padding: 0;
     padding-top: 20px;
 }
 .contact-component h2{
@@ -172,7 +173,7 @@
 }
 .content ul li .tel {
     font-family: MicrosoftYaHei-Bold;
-    font-size: 18px;
+    font-size: 15px;
     color: #333333;
     font-weight: bold;
     margin-top: 20px;
