@@ -106,7 +106,15 @@
   width: 280px;
 }
 
-.information .sub img.label {
+.information .sub img.label1 {
+  width: 80px;
+  height: 26px;
+  border-radius: 0px;
+  position: absolute;
+  margin-top: 15px;
+}
+
+.information .sub img.label2 {
   width: 96px;
   height: 26px;
   border-radius: 0px;
