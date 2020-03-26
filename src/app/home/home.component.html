@@ -1,57 +1,45 @@
 <div name="body" id="body" class="top-banner">
   <div class="banner-component">
-    <div class="sub ">
-      <div class="sub-left fadeInLeft animated" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: fadeInLeft;">
-          <div class="for-service">为服务而生，携手共进</div>
-          <div class="vertical-line-container">
-            <div class="vertical-line"></div>
-          </div>
-          <div class="text">以人为本，超值服务，极致体验</div>
-          <div class="text">标准化、流程化、系统化</div>
-      </div>
-      <div class="sub-left img-part fadeInLeft animated" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: fadeInLeft;">
-        <img src="../../assets/img/banner-right.png">
-      </div>
-    </div>
+    <img src="../../assets/img/bg.png">
   </div>
 </div>
 <div name="overseas" class="aboutus" id="overseas">
-  <div class="a-component fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
-    <h2>关于筑梦园</h2>
-    <div class="en-about-us">ABOUT US</div>
-    <div class="about-top">
-        <p>北京筑梦园科技有限公司成立于2014年，是沈阳美行科技有限公司的全资子公司。</p>
-        筑梦园致力于智慧停车行业，设计研发的基于大数据云平台的智能停车管理系统已经在全国范围内推广应用。
-    </div>
-    <div class="about-center">
-        筑梦园的产品能够为政府提供停车平台的服务，为企业和用户解决停车难的问题，改善行业现状。
-    </div>
-    <div class="about-bottom">
-        未来，筑梦园将在广度与深度方向细化停车系统，力求打造最便捷、最智能的停车软件，彻底改变停车难。
+  <div class="a-component fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s"
+    style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+    <div class="title"></div>
+    <div class="content">
+      北京筑梦园科技有限公司是美行科技的子公司，于2015年在成立。是一家致力于提供全场景一站式的
+      智慧停车解决方案提供商，是“华为严选”、腾讯WeCity、长三角静态交通一体化产业发展中心的生态合
+      作伙伴，为城市管理者、停车场运营机构提供城市级停车平台SAAS服务，实现停车服务的全场景覆盖，让
+      沈阳成为了国内首个落地城市级智慧停车解决方案的城市、交通部ETC智慧停车平台唯一试点城市。
     </div>
   </div>
 </div>
 <div name="message" class="information" id="message">
-    <div class="container-fluid a-component fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
-        <h2>行业资讯</h2>
-        <div class="en-about-us">INDUSTRY INFORMATION</div>
-        <div class="i-component">
-          <div class="sub" *ngFor="let item of products" nz-button [nzType]="'primary'" (click)="showModal()">
-            <img src="{{item.img}}" alt="">
-            <p class="tittle">{{item.title}}</p>
-            <div class="s-sub">
-              <span class="s-left">行业动态</span>
-              <span class="s-right">{{item.price}}浏览</span>
+  <div class="a-component fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s"
+    style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+    <div class="title"></div>
+    <div class="content">
+      <button class="p-left-btn" (click)="carousel.pre()"><i nz-icon class="pre"></i></button>
+      <nz-carousel #carousel [nzEffect]="'fade'">
+        <div nz-carousel-content *ngFor="let products of array">
+          <div class="wrap">
+            <div class="sub" *ngFor="let item of products" (click)="showModal()">
+              <img src="{{item.img}}" alt="">
+              <p class="line-limit-length">{{item.title}}</p>
             </div>
           </div>
         </div>
-      </div>
+      </nz-carousel>
+      <button class="p-right-btn" (click)="carousel.next()"><i nz-icon class="next"></i></button>
+    </div>
+  </div>
 
 </div>
 <div name="contact" class="contact-us" id="contact">
-  <div class="a-component contact-component fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
-    <h2>联系我们</h2>
-    <div class="en-about-us">CONTACT US</div>
+  <div class="a-component contact-component fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s"
+    style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+    <div class="title"></div>
     <div class="content">
       <ul>
         <li *ngFor="let item of contacts">
@@ -66,5 +54,5 @@
 <app-footer></app-footer>
 
 <nz-modal [(nzVisible)]="isVisible" nzTitle="提示" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
-    <p>注册会员登录后可浏览！会员费10元/月。</p>
+  <p>注册会员登录后可浏览！会员费10元/月。</p>
 </nz-modal>

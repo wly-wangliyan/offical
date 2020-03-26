@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +6,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  public products: Array<Product>;
+  public array: Array<Array<Product>>;
   public contacts: Array<Contact>;
   isVisible = false;
 
@@ -14,20 +14,29 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.products = [
-      new Product('../../assets/img/n1.jpg', '移动支付来袭 停车场转向“无人值守”', 1332),
-      new Product('../../assets/img/n2.jpg', '沈阳“智慧停车”来了，路边停一天得交多少钱？', 1568),
-      new Product('../../assets/img/n3.png', '35个重点城市公共停车场收费价格对比分析', 1024),
-      new Product('../../assets/img/n4.jpg', '中国人又一次攻克停车难，未来小区停车太容易了', 1782),
-      new Product('../../assets/img/n5.jpg', '中国“堵城”新鲜出炉，首堵竟然是它？', 1445),
-      new Product('../../assets/img/n6.png', '北京新规：公共停车场按不低于10%比例建充电设施', 1667),
-      new Product('../../assets/img/n7.jpg', '沈阳路边智慧停车收费区域及收费标准一览', 1882),
-      new Product('../../assets/img/n8.jpg', '破解都市停车难，看沈阳“智慧停车”怎么出招', 1452),
-    ];
+    this.array = [[
+      new Product('../../assets/img/01沈阳智慧停车平台.png', '沈阳智慧停车平台', 1332),
+      new Product('../../assets/img/02本溪智慧停车平台.png', '本溪智慧停车平台', 1568),
+      new Product('../../assets/img/03沈阳全民健身中心.png', '沈阳全民健身中心', 1024),
+      new Product('../../assets/img/04沈阳国际软件园.png', '沈阳国际软件园', 1782),
+      new Product('../../assets/img/05东北大厦.png', '东北大厦', 1445),
+      new Product('../../assets/img/06东北国际医院.png', '东北国际医院', 1667),
+      new Product('../../assets/img/07鞍山西站.png', '鞍山西站', 1882),
+      new Product('../../assets/img/08沈阳医学院附属中心医院.png', '沈阳医学院附属中心医院', 1452),
+    ], [
+      new Product('../../assets/img/01沈北红星欧丽洛雅.png', '沈北红星欧丽洛雅', 1332),
+      new Product('../../assets/img/02沈阳胸科医院.png', '沈阳胸科医院', 1568),
+      new Product('../../assets/img/03沈阳太清宫.png', '沈阳太清宫', 1024),
+      new Product('../../assets/img/04友谊宾馆.png', '友谊宾馆', 1782),
+      new Product('../../assets/img/05天赐街停车场.png', '天赐街停车场', 1445),
+      new Product('../../assets/img/06文峰大厦.png', '文峰大厦', 1667),
+      new Product('../../assets/img/07沈阳市财政局.png', '沈阳市财政局', 1882),
+      new Product('../../assets/img/08太原街五洲商业广场.png', '太原街五洲商业广场', 1452),
+    ]];
     this.contacts = [
-      new Contact('../../assets/img/tel.png', '服务热线', '010-82743605'),
-      new Contact('../../assets/img/email.png', '商务合作', 'fengyangang@zhumengyuan.com'),
-      new Contact('../../assets/img/location.png', '公司地址', '北京市海淀区上地三街中黎科技园2层C223')
+      new Contact('../../assets/img/service-call.png', '服务热线', '010-82743605'),
+      new Contact('../../assets/img/business.png', '商务合作', 'fengyangang@zhumengyuan.com'),
+      new Contact('../../assets/img/company-address.png', '公司地址', '北京市海淀区上地三街中黎科技园2层C223')
     ];
   }
 
@@ -36,12 +45,10 @@ export class HomeComponent implements OnInit {
   }
 
   handleOk(): void {
-    console.log('Button ok clicked!');
     this.isVisible = false;
   }
 
   handleCancel(): void {
-    console.log('Button cancel clicked!');
     this.isVisible = false;
   }
 
