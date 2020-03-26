@@ -107,11 +107,11 @@
 }
 
 .information .sub img.label {
-  width: 80px;
+  width: 96px;
   height: 26px;
   border-radius: 0px;
   position: absolute;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .information .sub p {
