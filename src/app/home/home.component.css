@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-.banner-component img{
+.banner-component img {
   width: 100%;
 }
 .sub-left {
@@ -15,7 +15,7 @@
   width: 48%;
   line-height: 825px;
 }
-.line-limit-length{
+.line-limit-length {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -48,7 +48,7 @@
   margin: 55px 0;
   width: 90px;
   height: 4px;
-  background-color: #FFF;
+  background-color: #fff;
   visibility: hidden;
 }
 
@@ -63,15 +63,15 @@
 .aboutus {
   height: 500px;
   padding-top: 80px;
-  background: url('../../assets/img/banner1-bg.png') no-repeat;
+  background: url("../../assets/img/banner1-bg.png") no-repeat center;
 }
-.aboutus .title{
-  background: url('../../assets/img/about-us.png') no-repeat;
+.aboutus .title {
+  background: url("../../assets/img/about-us.png") no-repeat;
   margin: 0 auto;
   width: 464px;
   height: 62px;
 }
-.aboutus .content{
+.aboutus .content {
   width: 666px;
   height: 104px;
   margin: 0 auto;
@@ -82,31 +82,31 @@
   font-family: SourceHanSansSC-Medium;
   font-weight: 500;
 }
-.information{
+.information {
   height: 800px;
   padding-top: 80px;
-  background: url('../../assets/img/banner3-bg.png') no-repeat #f3f3f3;
+  background: url("../../assets/img/banner3-bg.png") no-repeat #f3f3f3;
 }
-.information .title{
-  background: url('../../assets/img/case.png') no-repeat;
+.information .title {
+  background: url("../../assets/img/case.png") no-repeat;
   margin: 0 auto;
   width: 640px;
-  height: 62px; 
+  height: 62px;
 }
-.information .content{
+.information .content {
   width: 1390px;
   margin: 0 auto;
   display: flex;
   margin-top: 80px;
 }
 
-.information .sub img{
+.information .sub img {
   border-radius: 10px;
   height: 210px;
   width: 280px;
 }
 
-.information .sub img.label{
+.information .sub img.label {
   width: 80px;
   height: 26px;
   border-radius: 0px;
@@ -114,7 +114,7 @@
   margin-top: 10px;
 }
 
-.information .sub p{
+.information .sub p {
   font-size: 16px;
   color: #333;
   margin-top: 15px;
@@ -122,20 +122,20 @@
   font-weight: 400;
   text-align: left;
 }
-.contact-us{
-  height: 700px;
+.contact-us {
+  height: 800px;
   padding-top: 80px;
-  background: url('../../assets/img/banner4-bg.png') no-repeat right;
+  background: url("../../assets/img/banner4-bg.png") no-repeat right 110px;
 }
 
-.contact-us .title{
-  background: url('../../assets/img/contact-us.png') no-repeat;
+.contact-us .title {
+  background: url("../../assets/img/contact-us.png") no-repeat;
   margin: 0 auto;
   width: 580px;
-  height: 62px; 
+  height: 62px;
 }
 
-.contact-us .content ul{
+.contact-us .content ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -144,7 +144,7 @@
   height: 100%;
 }
 
-.contact-us .content ul li{
+.contact-us .content ul li {
   width: 400px;
   height: 320px;
   border-radius: 10px;
@@ -159,7 +159,9 @@
   height: 100%;
 }
 
-.about-top, .about-center, .about-bottom {
+.about-top,
+.about-center,
+.about-bottom {
   margin-bottom: 25px;
   font-size: 16px;
 }
@@ -173,7 +175,7 @@
 }
 
 .information .content .wrap .sub {
-  width:280px;
+  width: 280px;
   margin-bottom: 18px;
   position: relative;
 }
@@ -215,32 +217,32 @@
   color: #fff;
   /* overflow: hidden; */
 }
-.pre{
-  background: url('../../assets/img/上一页_disable.png') no-repeat;
+.pre {
+  background: url("../../assets/img/上一页_disable.png") no-repeat;
   width: 28px;
   height: 54px;
 }
-.pre:hover{
-  background: url('../../assets/img/上一页.png') no-repeat;
+.pre:hover {
+  background: url("../../assets/img/上一页.png") no-repeat;
   width: 28px;
   height: 54px;
 }
-.next{
-  background: url('../../assets/img/下一页_disable.png') no-repeat;
+.next {
+  background: url("../../assets/img/下一页_disable.png") no-repeat;
   width: 28px;
   height: 54px;
 }
-.next:hover{
-  background: url('../../assets/img/下一页.png') no-repeat;
+.next:hover {
+  background: url("../../assets/img/下一页.png") no-repeat;
   width: 28px;
   height: 54px;
 }
-button{
+button {
   background: none;
   border: none;
   outline: none;
 }
 
-.p-left-btn{
+.p-left-btn {
   margin-right: 36px;
 }
