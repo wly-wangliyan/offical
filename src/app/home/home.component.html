@@ -24,7 +24,11 @@
       <nz-carousel #carousel [nzEffect]="'fade'">
         <div nz-carousel-content *ngFor="let products of array">
           <div class="wrap">
-            <div class="sub" *ngFor="let item of products" (click)="showModal()">
+            <div class="sub" *ngFor="let item of products">
+              <img class="label" *ngIf="item.label==='城市项目'"
+                src="../../assets/img/城市项目tag.png" alt="">
+              <img class="label" *ngIf="item.label==='停车场项目'"
+                src="../../assets/img/停车场项目tag.png" alt="">
               <img src="{{item.img}}" alt="">
               <p class="line-limit-length">{{item.title}}</p>
             </div>

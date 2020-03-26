@@ -34,6 +34,7 @@
   font-size: 18px;
   background: url("./assets/img/selected-bg.png") no-repeat 0 45%;
   background-size: contain;
+  text-decoration: none;
 }
 .ant-anchor-link-title:hover {
   color: #e11d25;

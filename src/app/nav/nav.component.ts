@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -7,7 +7,9 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class NavComponent implements OnInit {
   showTopTwo = false;
-  constructor(private el: ElementRef) { }
+  @ViewChild('targetDiv') targetDiv: ElementRef;
+
+  constructor(private el: ElementRef, private render: Renderer2) { }
 
   ngOnInit() {
     // console.log(this.el.nativeElement);
@@ -15,10 +17,10 @@ export class NavComponent implements OnInit {
   }
   ngDoCheck() {
     let t = document.documentElement.scrollTop || document.body.scrollTop;
-    if (t > 760) {
-      this.showTopTwo = true;
+    if (t > 650) {
+      this.el.nativeElement.querySelector('.nav-top').style.background = 'rgba(0,0,0,0.8)';
     } else {
-      this.showTopTwo = false;
+      this.el.nativeElement.querySelector('.nav-top').style.background = '';
     }
 
   }
