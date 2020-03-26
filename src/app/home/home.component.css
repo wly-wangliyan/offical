@@ -84,7 +84,8 @@
 }
 .information{
   height: 800px;
-  background: url('../../assets/img/banner3-bg.png') no-repeat;
+  padding-top: 80px;
+  background: url('../../assets/img/banner3-bg.png') no-repeat #f3f3f3;
 }
 .information .title{
   background: url('../../assets/img/case.png') no-repeat;
@@ -123,6 +124,7 @@
 }
 .contact-us{
   height: 700px;
+  padding-top: 80px;
   background: url('../../assets/img/banner4-bg.png') no-repeat right;
 }
 
@@ -190,7 +192,6 @@
   width: 114px;
   height: 113px;
   margin-top: 50px;
-  border: 1px dotted #666;
 }
 
 .content ul li .t {
