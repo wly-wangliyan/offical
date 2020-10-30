@@ -1,16 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.less']
 })
 export class HomeComponent implements OnInit {
   public array: Array<Array<Product>>;
   public contacts: Array<Contact>;
+  public index = 0;
   isVisible = false;
 
   constructor() {
+  }
+
+  public chooseProduct(e) {
+    if (e.target.innerHTML === '免布线相机') {
+      this.index = 0;
+    } else if (e.target.innerHTML === '路牙相机') {
+      this.index = 1;
+    } else {
+      this.index = 2;
+    }
   }
 
   ngOnInit() {
